@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 const Cart = () => {
 
 
@@ -15,8 +16,11 @@ const Cart = () => {
 
     useEffect(() =>{
         fetchData()
-    }, [])
+    },[])
 
+    function handlecart(){
+        
+    }
 
 
     return(
@@ -63,7 +67,7 @@ const Cart = () => {
                     <div className="flex items-center justify-between">
                         <span className="text-3xl font-bold text-gray-900 ">${item.price}</span>
 
-                        <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-600">Add to cart</a>
+                        <button onClick={handlecart}  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-400 dark:focus:ring-blue-600">Add to cart</button>
 
 
                     </div>
