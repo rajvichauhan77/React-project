@@ -1,4 +1,6 @@
 import React from "react";
+// import { Link } from "react-router";
+
 
 const Navbar = () => {
     return(
@@ -11,9 +13,13 @@ const Navbar = () => {
                     <div className='flex gap-3'>
 
                 <button  className='py-1 px-4 rounded-2xl border hover:bg-slate-50'>Cart: 👜</button>
+{/* 
+                  <Link to="/" className='py-1 px-4 rounded-2xl border hover:bg-slate-50'>Cart: 👜</Link> */}
 
                 <button className='group relative'>
-                    <img className='w-10 rounded-full' src="" alt="" />
+
+                    <img className='w-10 rounded-full'  alt="" />
+                    
                     <div  className="absolute end-0  group-hover:block z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
                         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
                         <li>
