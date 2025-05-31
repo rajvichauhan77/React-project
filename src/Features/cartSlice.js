@@ -26,7 +26,7 @@ const cartSlice = createSlice({
                 item.qtn = 1;
                 state.cartList.push(item)
                 state.cartLength++
-                // console.log(cartList)
+                console.log(cartLength)
             }
         },
 
